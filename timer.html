@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="timer-container">
+        <div class="livetimebox" data-aos="zoom-in">
+            <h1 class="timer-txt">Timer</h1>
+            <div class="timer-cnt">00:00:00</div>
+            <div class="input-group">
+                <input type="number" id="hours" placeholder="Hours">
+                <input type="number" id="minutes" placeholder="Minutes">
+                <input type="number" id="seconds" placeholder="Seconds">
+            </div>
+            <button class="btn-section" id="btn-start" onclick="startCountdown()">Start</button>
+            <button class="btn-section" id="btn-stop" onclick="stopCountdown()">Stop</button>
+            <button class="btn-section" id="btn-reset" onclick="resetCountdown()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

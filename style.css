@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    background: rgb(190, 113, 212);
+    background: linear-gradient(52deg, rgba(190, 113, 212, 1) 16%, rgba(195, 83, 228, 1) 24%, rgba(84, 70, 209, 1) 49%, rgba(126, 52, 183, 1) 79%, rgba(8, 186, 207, 1) 88%, rgba(187, 251, 215, 1) 100%);
+}
+
+
+.cont-left {
+
+    height: 550px;
+    width: 50%;
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-right {
+    height: 550px;
+    width: 50%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.count a {
+    border: none;
+    outline: none;
+    /* padding-top: 38px; */
+
+    border-radius: 20px;
+    padding: 10px 70px;
+    cursor: pointer;
+    background-color: rgb(0 0 1);
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.cont-left img {
+    padding-bottom: 25px;
+}
+
+.cont-right img {
+    padding-bottom: 25px;
+}
+
+.count a:hover {
+    transition: 0.2s ease-in;
+    background-color: rgb(3, 12, 195);
+}
+
+
+/*  CSS for Timer Section */
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(190, 113, 212);
+    background: linear-gradient(52deg, rgba(190, 113, 212, 1) 16%, rgba(195, 83, 228, 1) 24%, rgba(84, 70, 209, 1) 49%, rgba(126, 52, 183, 1) 79%, rgba(8, 186, 207, 1) 88%, rgba(187, 251, 215, 1) 100%);
+}
+
+.livetimebox {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 70vh;
+    width: 55vw;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding-top: 150px;
+    margin-top: 100px; 
+    /* flex-direction: column; */
+
+}
+
+
+/* For Stopwatch */
+
+.stwatch-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(190, 113, 212);
+    background: linear-gradient(52deg, rgba(190, 113, 212, 1) 16%, rgba(195, 83, 228, 1) 24%, rgba(84, 70, 209, 1) 49%, rgba(126, 52, 183, 1) 79%, rgba(8, 186, 207, 1) 88%, rgba(187, 251, 215, 1) 100%);
+}
+
+.stwatchbox {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 70vh;
+    width: 55vw;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.digit{
+    font-size: 60px;
+    font-weight: bold;
+}
+.timer-section{
+    font-size: 29px;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(35, 24, 24);
+    transition: 0.2s ease-in;
+    border: 2px solid black;
+    border-radius: 40%;
+}
+#start{
+    background-color: rgb(90 25 214);
+}
+#stop{
+    background-color: red;
+}
+#reset{
+    background-color: green;
+}
+.txt{
+    font-size: 12p0x;
+}
+.digit{
+    margin-left: 30px;
+}
+
+.stopwatch{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #f4f2f5;
+}
+
+
+/*  for timer  */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .timer-cnt {
+    font-size: 48px;
+    margin-top: 30px;
+  }
+  .input-group {
+    margin-top: 20px;
+  }
+  .input-group input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+  }
+  .timer-txt{
+    text-decoration: underline;
+    color: rgb(48, 27, 6);
+  }
+  .btn-section{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+}
+.btn-section:hover{
+    color: rgb(35, 24, 24);
+    transition: 0.2s ease-in;
+    border: 2px solid black;
+    border-radius: 40%;
+}
+#btn-start{
+    background-color: rgb(90 25 214);
+}
+#btn-stop{
+    background-color: red;
+}
+#btn-reset{
+    background-color: green;
+}
